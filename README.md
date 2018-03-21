@@ -179,18 +179,23 @@ RUN pip3 install requests
 # Run python_docker.py when the container launches
 CMD [ "python3", "./python_docker.py" ]
 ```
->Dockerfile is a text file that contains all the commands, in order, needed to build a given image automatically. In this case python.Here is the description of the instructions we’re going to use in our next example:
->FROM — set base image
+---
 
->RUN — execute command in container
+Dockerfile is a text file that contains all the commands, in order, needed to build a given image automatically. In this case python.Here is the description of the instructions we’re going to use in our next example:
 
->ENV — set environment variable
+FROM — set base image
 
->WORKDIR — set working directory
+RUN — execute command in container
 
->VOLUME — create mount-point for a volume
+ENV — set environment variable
 
->CMD — set executable for container
+WORKDIR — set working directory
+
+VOLUME — create mount-point for a volume
+
+CMD — set executable for container
+
+---
 
 * Build Docker Image
 Run the following command in Terminal, from Myimage-docker directory, to create Docker Image with Python Application.
