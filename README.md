@@ -224,7 +224,10 @@ docker save -o directory/file_name.tar my-docker-image
 
 Now you may copy or ship the Docker Image file that is having Python Application.
 
-##Webographie
+## Webographie
+
 [djangostars](https://djangostars.com/blog/what-is-docker-and-how-to-use-it-with-python/)
+
 [Full Stack Python](https://www.fullstackpython.com/docker.html)
+
 [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04)
