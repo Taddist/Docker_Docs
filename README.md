@@ -12,8 +12,8 @@ To follow this tutorial, you will need the following :
 - 64-bit Ubuntu 16.04 server
 - Non-root user with sudo privileges
 
-All the commands in this tutorial should be run as a non-root user. If root access
-is required for the command, it will be preceded by sudo
+>All the commands in this tutorial should be run as a non-root user. If root access
+is required for the command, it will be preceded by sudo.
 
 ### Step 1 — Installing Docker
 
