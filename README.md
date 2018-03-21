@@ -141,6 +141,7 @@ Container can be easily killed / removed and re-created again in a very short ti
 **Registry** :he server that stores Docker images. It can be compared to Github — you can pull an image from the registry to deploy it locally, and you can push locally built images to the registry. 
 
 **Docker Daemon** :The background service running on the host that manages building, running and distributing Docker containers. The daemon is the process that runs in the operating system to which clients talk to.
+
 **Docker hub** :a registry with web-interface provided by Docker Inc. It stores a lot of Docker images with different software. Docker hub is a source of the “official” Docker images made by Docker team or made in cooperation with the original software manufacturer (it doesn’t necessary mean that these “original” images are from official software manufacturers). Official images list their potential vulnerabilities. This information is available for any logged in user. There are both free and paid accounts available. You can have one private image per account and an infinite amount of public images for free. 
 
 ## Create your own image 
