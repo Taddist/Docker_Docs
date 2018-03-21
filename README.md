@@ -213,9 +213,9 @@ docker run my-docker-image
 
 ```
 * Save Docker Image to a tar file
-Save the Docker Image file to a tar file, so that the image file could be copied to other machines through disk storage devices like pen-drive, etc.
+ Save the Docker Image file to a tar file, so that the image file could be copied to other machines through disk storage    devices like pen-drive, etc.
 
-Run the following command to save Docker image as a tar file.
+  Run the following command to save Docker image as a tar file.
 ```
 docker save -o directory/file_name.tar my-docker-image
 
