@@ -146,11 +146,11 @@ Container can be easily killed / removed and re-created again in a very short ti
 ## Create your own image 
 To build a Docker image you need to follow these steps:
 
-*Create a directory
+* Create a directory
 
 A separate directory is useful to organise docker applications. For this Python Example, create a directory somewhere with name of your choice. We shall use the name **Myimage-docker**
 
-*Create Python Application
+* Create Python Application
 
 Create a simple Python File, in the directory **Myimage-docker**, with name **python_docker.py** containing the following content :
 ```
@@ -162,7 +162,7 @@ r = requests.get('http://www.google.com')
 print (r.status_code)
 ```
 
-*Create Dockerfile 
+* Create Dockerfile 
 
 Create a file with name Dockerfile. Dockerfile contains instructions to prepare Docker image with our Python Application.
 Following is the content of Dockerfile :
@@ -187,21 +187,21 @@ CMD [ "python3", "./python_docker.py" ]
 >VOLUME — create mount-point for a volume
 >CMD — set executable for container
 
-*Build Docker Image
+* Build Docker Image
 Run the following command in Terminal, from Myimage-docker directory, to create Docker Image with Python Application.
 
-*Build the image using our directory's Dockerfile with the following command :
+* Build the image using our directory's Dockerfile with the following command :
 ```
 docker build -t my-docker-image .
 
 ```
 **Now we have the new image and we can see it in the list of existing images:by typing docker images**
-*Run Docker Image with Python Application
+* Run Docker Image with Python Application
 ```
 docker run my-docker-image 
 
 ```
-*Save Docker Image to a tar file
+* Save Docker Image to a tar file
 Save the Docker Image file to a tar file, so that the image file could be copied to other machines through disk storage devices like pen-drive, etc.
 
 Run the following command to save Docker image as a tar file.
@@ -209,6 +209,6 @@ Run the following command to save Docker image as a tar file.
 docker save -o directory/file_name.tar my-docker-image
 
 ```
-Saving might take few seconds. Wait for the command to complete.
+**Saving might take few seconds. Wait for the command to complete.**
 
 Now you may copy or ship the Docker Image file that is having Python Application.
