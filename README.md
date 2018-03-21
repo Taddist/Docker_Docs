@@ -181,16 +181,21 @@ CMD [ "python3", "./python_docker.py" ]
 ```
 >Dockerfile is a text file that contains all the commands, in order, needed to build a given image automatically. In this case python.Here is the description of the instructions we’re going to use in our next example:
 >FROM — set base image
+
 >RUN — execute command in container
+
 >ENV — set environment variable
+
 >WORKDIR — set working directory
+
 >VOLUME — create mount-point for a volume
+
 >CMD — set executable for container
 
 * Build Docker Image
 Run the following command in Terminal, from Myimage-docker directory, to create Docker Image with Python Application.
 
-* Build the image using our directory's Dockerfile with the following command :
+Build the image using our directory's Dockerfile with the following command :
 ```
 docker build -t my-docker-image .
 
